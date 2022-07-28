@@ -4,9 +4,6 @@ import numpy as np
 import joblib
 import pickle
 
-with open('Models/Imputer', 'rb+') as f: 
-    imputer = pickle.load(f)
-
 model = joblib.load('Models/lgbm_tuned_final.joblib')
 
 st.set_page_config(page_title = "Site Energy Consumption App",
